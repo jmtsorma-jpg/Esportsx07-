@@ -1,0 +1,16 @@
+{
+  "teams": [
+    { "rank": 1, "name": "Team Alpha", "rankPts": 12, "killPts": 30 },
+    { "rank": 2, "name": "Team Bravo", "rankPts": 10, "killPts": 25 },
+    { "rank": 3, "name": "Team Cobra", "rankPts": 8, "killPts": 20 },
+    { "rank": 4, "name": "Team Delta", "rankPts": 6, "killPts": 18 },
+    { "rank": 5, "name": "Team Echo", "rankPts": 4, "killPts": 12 },
+    { "rank": 6, "name": "Team Falcon", "rankPts": 2, "killPts": 10 },
+    { "rank": 7, "name": "Team Ghost", "rankPts": 1, "killPts": 8 },
+    { "rank": 8, "name": "Team Hunter", "rankPts": 0, "killPts": 5 },
+    { "rank": 9, "name": "Team Inferno", "rankPts": 0, "killPts": 4 },
+    { "rank": 10, "name": "Team Joker", "rankPts": 0, "killPts": 3 },
+    { "rank": 11, "name": "Team Knight", "rankPts": 0, "killPts": 2 },
+    { "rank": 12, "name": "Team Legend", "rankPts": 0, "killPts": 1 }
+  ]
+}

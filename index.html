@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Esports Point Table</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>OVERALL STANDINGS - GROUP A</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>RANK</th>
+                <th>TEAM NAME</th>
+                <th>RANK PTS</th>
+                <th>KILL PTS</th>
+                <th>TOTAL PTS</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+        </tbody>
+
+    </table>
+
+</div>
+
+<script>
+
+fetch("data.json")
+.then(response => response.json())
+.then(data => {
+
+    const tableBody = document.getElementById("tableBody");
+
+    data.teams.forEach(team => {
+
+        const total = team.rankPts + team.killPts;
+
+        const row = `
+        <tr>
+            <td>${team.rank}</td>
+            <td>${team.name}</td>
+            <td>${team.rankPts}</td>
+            <td>${team.killPts}</td>
+            <td>${total}</td>
+        </tr>
+        `;
+
+        tableBody.innerHTML += row;
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
